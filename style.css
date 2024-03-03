@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	background-color: #f0efeb;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	color: #4361ee;
+	margin-top: 50px;
+	font-size: 24px;
+}
+
+.data-buku {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.data-buku .container {
+	width: 800px;
+	background-color: #edf6f9;
+	border-radius: 15px;
+	padding: 60px;
+}
+
+.form-databuku {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	font-size: 20px;
+	margin-bottom: 5px;
+	font-weight: lighter;
+}
+
+.form-title {
+	font-size: 20px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.item {
+	border-radius: 16px;
+	margin-top: 16px;
+	padding: 12px 24px 12px 24px;
+	background: white;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+}
+
+.item > .inner h2 {
+	margin-bottom: unset;
+	color: red;
+	text-transform: capitalize;
+}
+
+.item > .inner p {
+	margin-top: 5px;
+}
+
+.shadow {
+	box-shadow: 0 10px 15px rgba(154, 160, 185, 0.05),
+		0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+input[type='text'],
+input[type='number'] {
+	font-family: 'Fira Sans', sans-serif;
+	border: 3px solid #f0efeb;
+	border-radius: 8px;
+	padding: 16px;
+	box-sizing: border-box;
+	margin-bottom: 8px;
+	font-size: 20px;
+	color: #011627;
+}
+
+.submit-button {
+	font-family: 'Fira Sans', sans-serif;
+	border-radius: 16px;
+	padding: 12px 24px;
+	background-color: white;
+	border: 3px solid #103783;
+	color: black;
+	font-size: 24px;
+	margin-top: 30px;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.submit-button:hover {
+	background: #4361ee;
+	color: white;
+}
+
+.remove-btn {
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	margin-left: 16px;
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+	font-size: 20px;
+	padding-top: 4px;
+}
+
+.remove-btn:hover {
+	background-size: contain;
+	background-color: black;
+	color: white;
+}
+
+.refresh-btn {
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	margin-left: auto;
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+	font-size: 20px;
+	padding-top: 4px;
+}
+
+.refresh-btn:hover {
+	background-size: contain;
+	background-color: black;
+	color: white;
+}
+
+.finish-btn {
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	margin-left: auto;
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+	font-size: 20px;
+	padding-top: 4px;
+}
+
+.finish-btn:hover {
+	background-size: contain;
+	background-color: black;
+	color: white;
+}
+
+.form-search {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.reset-btn {
+	background-size: contain;
+	width: 80px;
+	height: 40px;
+	margin-left: auto;
+	cursor: pointer;
+	border: 1px solid;
+	border-radius: 20px;
+	font-size: 20px;
+	padding-top: 4px;
+}
+
+.reset-btn:hover {
+	background-size: contain;
+	background-color: red;
+	color: white;
+}
+
+.search-btn {
+	background-size: contain;
+	width: 80px;
+	height: 40px;
+	margin-left: auto;
+	cursor: pointer;
+	border: 1px solid;
+	border-radius: 20px;
+	font-size: 20px;
+	padding-top: 4px;
+}
+
+.search-btn:hover {
+	background-size: contain;
+	background-color: green;
+	color: white;
+}
+
+.clear-btn {
+	font-family: 'Fira Sans', sans-serif;
+	border-radius: 16px;
+	padding: 12px 24px;
+	background-color: white;
+	border: 3px solid #103783;
+	color: black;
+	font-size: 24px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-weight: 400;
+	width: 100%;
+}
+
+.clear-btn:hover {
+	background: red;
+	color: white;
+}
+
+.kanan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.kiri {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.kiri .container {
+	margin-left: 20px;
+}
+
+.item-title {
+	color: black;
+}
+
+.item-title span {
+	color: black;
+}
+
+.hidden {
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	header {
+		margin-top: 20px;
+	}
+	.data-buku {
+		margin: 10px;
+	}
+	.data-buku .container {
+		width: 100%;
+	}
+	.list-item {
+		width: 100%;
+	}
+	.form-databuku {
+		width: 100%;
+		padding: 0;
+	}
+	.reset-btn {
+		background-size: contain;
+		width: 40px;
+		height: 40px;
+		margin-left: auto;
+		cursor: pointer;
+		border: 1px solid;
+		border-radius: 20px;
+		font-size: 20px;
+		padding-top: 4px;
+	}
+	.reset-btn:hover {
+		background-size: contain;
+		background-color: black;
+		color: white;
+	}
+	.search-btn {
+		background-size: contain;
+		width: 40px;
+		height: 40px;
+		margin-left: auto;
+		cursor: pointer;
+		border: 1px solid;
+		border-radius: 20px;
+		font-size: 20px;
+		padding-top: 4px;
+	}
+	.search-btn:hover {
+		background-size: contain;
+		background-color: black;
+		color: white;
+	}
+	.kiri {
+		display: flex;
+		flex-direction: column;
+	}
+	.kiri .container {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}
